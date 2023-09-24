@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    height: 480px;
+    width: 300px;
+    background-color: black;
+    border-radius: 10px;
+    border: 3px solid black;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 15px 0 10px;
+}
+.nav-container-1 a{
+    text-decoration: none;  
+    color: white;
+}
+.nav-container-2 i{
+    color: white !important;
+}
+
+#storiyan {
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    white-space: nowrap; /*we use these to place the all the stories in a row.. */
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#storiyan::-webkit-scrollbar {
+    display: none; /*  this property  helps in hide the scroll bar */
+}
+
+#story {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid rgb(203, 10, 62);
+    overflow: hidden;
+    margin-right: 5px;
+    display: inline-block; /* we use this instead of dislay flex...display flex used in parent ..but display inline block used in child */
+}
+#story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+    
+
+}
+
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+
+}
+
+
+
+
+#profile {
+    height: 20px;
+    width: 100%;
+    /* border-bottom: 1px solid black; */
+    margin: 10px 0px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 10px;
+    
+}
+
+#profile-btn{
+    margin-left: 140px;
+}
+#profile-info{
+    font-size: 10px;
+    font-weight: 100;
+    font-family:'Times New Roman', Times, serif;
+}
+#profile-info p{
+    font-size: 8px;
+    font-weight: 100;
+    font-family:'Times New Roman', Times, serif;
+}
+#profile-img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    
+
+}
+
+#profile-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+#container{
+    height: 90%;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    
+}
+#container img{
+    height: 80%;
+    width: 90%;
+    margin: 10px;
+    margin-top: 0px;
+    align-items: center;
+    object-fit: cover;
+    
+}
+
+#container i{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    font-size: 70px;
+    opacity: 0.8;
+    transition: transform ease 0.5;
+}
+
+.con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 18px 10px 10px;
+    font-size: 20px;
+
+}
+.below{
+    display: flex;
+    gap: 10px;
+}
+
+
+#main h3{
+    font-size: 8px;
+    margin-left: 10px;
+}
+
+#main h4{
+    font-size: 8px;
+    margin-left: 10px;
+    margin-top: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#main span{
+    padding-left: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
